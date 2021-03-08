@@ -1,8 +1,8 @@
-<body>
-<%= render 'items/navbar'%>
-<div class="container center">
-<h2>Sign up</h2>
 
+<div class="container login-container d-flex justify-content-center">
+
+<div class="col-md-6 login-form-1">
+<h3>Sign up</h3>
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
 
@@ -21,9 +21,10 @@
   </div>
 
   <div class="actions">
-    <%= f.submit "Sign up" %>
+    <input type="submit" class="btnSubmit" value="Sign up"<%= f.submit "Sign up" %>
   </div>
 <% end %>
 
 <%= render "devise/shared/links" %></div>
-</body>
+</div>
+
