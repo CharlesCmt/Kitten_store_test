@@ -5,8 +5,9 @@
               <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
               <div class="card-body">
                 <h4 class="card-title">
-                  <a href="#"><%= item.title%></a>
+                  <a href=""><%= item.title%></a>
                 </h4>
+                <%= link_to "En savoir plus", item_path(item.id), class: "btn btn-dark mr:10px" %>
                 <h5><%= item.price%>$</h5>
                 <p class="card-text"><%= item.description%></p>
               </div>
