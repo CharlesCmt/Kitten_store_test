@@ -1,14 +1,19 @@
-<div class ="container">
-<% @items.each do|item|%>
-  <div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="https://i.pinimg.com/originals/db/ed/eb/dbedeb0633d33285a2819cfa3d325e40.jpg" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title"><%= item.title%></h5>
-      <p class="card-text"><%= item.description%></p>
-      <a href="#" class="btn btn-primary"><%= item.price%></a>
-      
-      <button type="button" class="btn btn-success"><%= link_to 'show',item_path(item)%></button>
-    </div>
-  </div>
-<%end%>
+<div class="row"> 
+    <% @items.each do |item|%>
+      <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card h-100">
+              <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title">
+                  <a href="#"><%= item.title%></a>
+                </h4>
+                <h5><%= item.price%>$</h5>
+                <p class="card-text"><%= item.description%></p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+              </div>
+            </div>
+          </div>
+    <% end %>
 </div>
