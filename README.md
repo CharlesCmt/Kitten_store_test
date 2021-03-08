@@ -1,24 +1,35 @@
-# README
+## ✨ What's inside ?
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+→ This project is running with Ruby on Rails for the back-end side and partly with Bootstrap for the front side.<br> 
+→ Features: 
+```
+- Online store displaying pokemon pictures
+- Stripe payments, Mailer for notifications and orders 
+- Admin dashboard
+- Cart
+- User account with profile picture, editing page and password recovery. 
+- Mailer for notifications and orders
+- ...
+```
+#  Specs
 
-Things you may want to cover:
+* Ruby version : 2.5.1
+* Rails version : 5.2.4
+* Pipeline : Heroku
 
-* Ruby version
+* Database : PostgreSQL
 
-* System dependencies
+# 🚀 Install
 
-* Configuration
+Make sure you have [RVM](https://rvm.io/rvm/install) installed 
 
-* Database creation
+Just run the following command in your CLI at the root of your project:
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+  - clone the project to your local directory using `git clone https://github.com/nicolashodee/pokemon_store.git`
+  - go into the root folder and run bundle install
+  - run `rails db:create`
+  - run `rails db:migrate`
+  - run `rails db:seed`
+  - run `rails s`
+  - go to the webpage : http://localhost:3000/
+  - Browse and enjoy 🔥 !
