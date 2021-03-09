@@ -9,7 +9,7 @@
 prices = [10.99, 11.99, 12.99, 13.99, 14.99, 15.99, 16.99, 17.99, 18.99, 19.99]
 
  10.times do 
-  Item.create!(title: Faker::Book.title, description: Faker::Lorem.sentence(5), price:  prices.sample)
+  Item.create!(title: Faker::Book.title, description: Faker::Lorem.sentence(5), price:  prices.sample, image_url: Faker::LoremFlickr.image)
  end
 
 #User.create!(email: "admin@admin.com", first_name: "Admin", last_name: "The Boss", password: "admin01", is_admin: true)
