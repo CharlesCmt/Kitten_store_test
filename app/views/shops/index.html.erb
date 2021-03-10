@@ -1,4 +1,7 @@
 <%= link_to "#{current_order.order_items.size} items with a value of $", cards_show_path%>
+<div id="card">
+  <%= render 'cards/card'%>
+</div>
 <div class="row"> 
     <% @items.each do |item|%>
       <div class="col-lg-4 col-md-6 mb-4">
@@ -29,6 +32,4 @@
     <% end %>
 </div>
 
-<div id="card">
-  <%= render 'cards/card'%>
-</div>
+
