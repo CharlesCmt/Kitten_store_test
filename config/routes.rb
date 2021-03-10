@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
+  resources :items
   get 'cards/show'
   get 'static_pages/index'
   get 'static_pages/secret'
   devise_for :users
-  root 'items#index'
+  root 'shops#index'
+  resources :shops, only:[:index, :show]
   resources :items
   resources :order_items
   resources :cards, only:[:show]
