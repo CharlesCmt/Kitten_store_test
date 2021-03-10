@@ -13,12 +13,13 @@
                 <p class="card-text"><%= item.description%></p>
               </div>
               <div>
+              <td>
                     <%= form_for @order_item do|f|%>
                     <%= f.hidden_field :item_id, :value => item.id %>
                     <%= f.number_field :quantity, :value => 1, :min => 1 %>
                     <%= f.submit "add to Cart" %>
                     <%end%>
-
+              </td>
               </div>
               <div class="card-footer">
                 <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
