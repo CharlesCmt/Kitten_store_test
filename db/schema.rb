@@ -10,32 +10,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_03_09_084210) do
+ActiveRecord::Schema.define(version: 2021_03_10_161902) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "cart_items", force: :cascade do |t|
-    t.bigint "item_id"
-    t.bigint "cart_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["cart_id"], name: "index_cart_items_on_cart_id"
-    t.index ["item_id"], name: "index_cart_items_on_item_id"
-  end
-
-  create_table "carts", force: :cascade do |t|
-    t.bigint "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_carts_on_user_id"
-  end
 
   create_table "items", force: :cascade do |t|
     t.string "title"
     t.text "description"
     t.decimal "price"
     t.string "image_url"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "order_items", force: :cascade do |t|
+    t.integer "quantity"
+    t.integer "item_id"
+    t.integer "order_id"
+    t.decimal "total"
+    t.decimal "unit_price"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "orders", force: :cascade do |t|
+    t.decimal "subtotal"
+    t.decimal "total"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
