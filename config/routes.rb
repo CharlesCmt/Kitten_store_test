@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  resources :items
   get 'cards/show'
   get 'static_pages/index'
   get 'static_pages/secret'
@@ -8,6 +7,6 @@ Rails.application.routes.draw do
   resources :shops, only:[:index, :show]
   resources :items
   resources :order_items
-  resources :cards, only:[:show]
+  resource :cards, only:[:show]
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
