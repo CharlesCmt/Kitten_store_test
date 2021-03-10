@@ -1,52 +1,66 @@
 /* TO-DO: 
 1 - Clean indentation
-2 - add little space on top and bottom of footer_title 
-3 - align footer title with line
-4 - move copyright to right of footer
-5 - change href link of footer li in html file
+2 - add little space on top and bottom of footer_title KO
+3 - align footer title with line ko
+4 - move copyright to right of footer ko
+5 - change href link of footer li in html file ko
 */
+
 
 
 .footer-basic {
     background-color:#292b2c ;
     color:#858585;
-  }
+    align-content:space-evenly;
+}
 
-  .footer-basic ul {
+.footer-basic ul {
     display: flex;
-    justify-content:end;
-    padding-right:30px;
-  }
+    justify-content:flex-end;
+    padding-right:50px;
+}
 
-  .footer-basic li {
+.footer-basic h2 {
+
+    padding-top:50px;
+}
+
+.footer-basic li {
     list-style:none;
     font-size:18px;
     padding-right: 13px;
-  }
+    justify-content:flex-end;
+    padding-right:50px;
+    display: flex;
+    margin-top: -30px;
+}
 
-  .footer-basic ul a {
+.footer-basic ul a {
     color:inherit;
     text-decoration:none;
     opacity:0.5;
-  }
+}
 
-  .footer-basic ul a:hover {
+.footer-basic ul a:hover {
     opacity:1;
     transition: .4;
-  }
+}
 
-  .footer_title {
+.footer_title {
     display: flex;
     justify-content: start;
     padding-left: 20px;
     padding-bottom: -20;
     margin-bottom:0;
     font-size: 30px;
-  }
+}
 
 .footer-basic .copyright {
-  padding-left: 20px;
-  font-size:13px;
-  color:#aaa;
-  margin-bottom:0;
+    padding-right: 90px;
+    font-size:13px;
+    color:#aaa;
+    margin-bottom:0;
+    justify-content:flex-end;
+    display: flex;
+    padding-bottom:30px;
 }
