@@ -26,3 +26,4 @@ prices = [10.99, 11.99, 12.99, 13.99, 14.99, 15.99, 16.99, 17.99, 18.99, 19.99]
 #   Order.create!(user_id: 1, cart_id: i+1, total: 100)
 # end
 # puts "order cree"
+AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?

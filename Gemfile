@@ -10,6 +10,7 @@ gem 'dotenv-rails'
 gem 'bootstrap'
 gem 'jquery-rails', '~> 4.4'
 gem 'mailjet'
+gem 'activeadmin' # For the admin dashboard by the best gem in rails :)
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
