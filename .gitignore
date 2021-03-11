@@ -10,6 +10,9 @@ Gemfile.lock
 # Ignore bundler config.
 /.bundle
 
+#Ignore the dotenv file
+.env
+
 # Ignore all logfiles and tempfiles.
 /log/*
 /tmp/*
