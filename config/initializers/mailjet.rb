@@ -1,6 +1,3 @@
-# This file is used by Rack-based servers to start the application.
-
-require_relative 'config/environment'
 require 'mailjet'
 Mailjet.configure do |config|
 config.api_key = 'c19d87d61d0b74f939650b66eef81902'
@@ -25,5 +22,3 @@ variable = Mailjet::Send.create(messages: [{
 }]
 )
 p variable.attributes['Messages']
-
-run Rails.application
