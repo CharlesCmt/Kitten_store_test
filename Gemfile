@@ -6,6 +6,7 @@ gem 'table_print'
 gem 'faker'
 gem 'devise'
 gem 'stripe'
+gem 'dotenv-rails'
 gem 'bootstrap'
 gem 'jquery-rails', '~> 4.4'
 
